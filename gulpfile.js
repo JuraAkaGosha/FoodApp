@@ -52,6 +52,21 @@ gulp.task('libs', function() {
         .pipe(gulp.dest('./builds/dist/libs/bootstrap/'));
     gulp.src(bc + 'bootstrap-material-design/dist/**/*.*')
         .pipe(gulp.dest('./builds/dist/libs/bootstrap-material-design/'));
+    gulp.src([bc+'angular/angular.js',
+        bc+'angular-animate/angular-animate.js',
+        bc+'angular-cookies/angular-cookies.js',
+        bc+'angular-i18n/angular-locale_ru-ru.js',
+        bc+'angular-loader/angular-loader.js',
+        bc+'angular-resource/angular-resource.js',
+        bc+'angular-route/angular-route.js',
+        bc+'angular-sanitize/angular-sanitize.js',
+        bc+'angular-touch/angular-touch.js',
+        bc+'firebase/firebase.js',
+        bc+'angular-ui-router/release/angular-ui-router.js',
+        bc+'angularfire/dist/angularfire.js',
+    ])
+        .pipe(concat('angular.concat.js'))
+        .pipe(gulp.dest('./builds/dist/libs/angular/'));
 });
 gulp.task('webserver', function() {
     gulp.src('builds/dist/')
