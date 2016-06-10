@@ -1,1 +1,13 @@
 <h1>{{home.title}}</h1>
+<form class="form-horizontal">
+    <fieldset>
+        <div class="form-group">
+            <label for="select111" class="col-md-2 control-label">Choose category</label>
+            <div class="col-md-10">
+                <select id="select111" class="form-control" >
+                    <option ng-repeat="food in home.food">{{food.$id}}</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,57 @@
+<form class="form-horizontal">
+    <fieldset>
+        <div class="form-group">
+            <label for="select111" class="col-md-2 control-label">Choose category</label>
+            <div class="col-md-10">
+                <select id="select111" class="form-control" >
+                    <option ng-repeat="food in admin.food">{{food.$id}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="podcategory" class="col-md-2 control-label">podcategory</label>
+            <div class="col-md-10">
+                <select disabled="" class="form-control" id="podcategory">
+                    <option ng-repeat="food in admin.food">{{food.$id}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputFile" class="col-md-2 control-label">Image</label>
+            <div class="col-md-10">
+                <!--<input type="text" readonly="" class="form-control" placeholder="Browse...">-->
+                <input type="file" id="inputFile" multiple="" class="btn btn-raised">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-md-2 control-label">Name</label>
+            <div class="col-md-10">
+                <input type="email" class="form-control" id="name" placeholder="Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="price" class="col-md-2 control-label">price</label>
+            <div class="col-md-10">
+                <input type="email" class="form-control" id="price" placeholder="Price">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description" class="col-md-2 control-label">description</label>
+            <div class="col-md-10">
+                <input type="email" class="form-control" id="description" placeholder="description">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="submit" class="btn btn-primary">Добавить</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<table class="table table-striped table-hover ">
+    <tbody>
+    <tr ng-repeat="adminFood in admin.food">
+        <td>{{adminFood.$id}}</td>
+    </tr>
+    </tbody>
+</table>
