@@ -1,0 +1,166 @@
+// All Our Dependencies
+@import "../libs/bootstrap/css/bootstrap.css";
+@import "../libs/bootstrap-material-design/css/roboto.css";
+@import "../libs/bootstrap-material-design/css/material-fullpalette.css";
+@import "../libs/bootstrap-material-design/css/ripples.css";
+//=== === ===
+// Our SASS Files
+@import "includes/varibles";
+@import "includes/mixins";
+@import "includes/stack";
+// Some Styles...
+$color-agg: #fa5c65;
+$color-head: #314a5b;
+body {
+  background-color: #fff;
+}
+
+.top_head {
+  background-image: url('../img/bg_top.png');
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top_head_menu {
+  float: right;
+  margin-top: 40px;
+  ul {
+    list-style: none;
+    li {
+      text-transform: uppercase;
+      display: inline-block;
+      a {
+        color: $color-head;
+        text-decoration: none;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 1.2em;
+        letter-spacing: 1.5px;
+        padding: 0 15px;
+        -webkit-transition: color .5s;
+        -moz-transition: color .5s;
+        -ms-transition: color .5s;
+        -o-transition: color .5s;
+        transition: color .5s;
+        &:hover {
+          color: $color-agg;
+        }
+      }
+    }
+  }
+}
+
+.top_head_header {
+  margin-top: 200px;
+  font-family: "Montserrat";
+  color: $color-head;
+  h1 {
+    font-weight: 700;
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+  p {
+    float: right;
+    font-size: 1.25em;
+    margin-right: 90px;
+  }
+
+}
+
+.top_head_header_button {
+  margin-top: 115px;
+  a {
+    padding: 25px 40px;
+    background-color: $color-agg;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid $color-agg;
+    &:hover {
+      background-color: transparent;
+      color: $color-agg;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+    }
+  }
+}
+
+.block_header {
+  font-size: 2.25em;
+  font-family: "Montserrat";
+  color: $color-head;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.photo {
+  margin-left: 90px;
+  margin-right: 40px;
+  width: 143px;
+  height: 143px;
+}
+
+.about {
+  padding-bottom: 60px;
+  background-color: #e9eff3;
+  h3 {
+    font-size: 1.75em;
+    color: #5b6d75;
+  }
+}
+.development{
+  background-color: #edf9f7;
+}
+.contact{
+  background-color: #f4f9ff;
+  h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-head;
+    font-family: 'Roboto';
+  }
+  p{
+    color: $color-head;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 1.875em;
+    span{
+      margin-left: 10%;
+      color: $color-agg;
+      margin-right: 32px;
+    }
+  }
+}
+.buttSend{
+  background-color: $color-agg;
+}
+.inputLabel{
+  color: $color-head !important;
+
+}
+textarea{
+  margin-top: 10px;
+}
+.input{
+background-image: linear-gradient($color-agg, #fa525a), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+footer{
+  height: 100px;
+  background-color: $color-head;
+  p{
+    text-align: center;
+    padding-top: 40px;
+    //line-height: 100px;
+    color: #fff;
+    font-family: Roboto;
+  }
+}

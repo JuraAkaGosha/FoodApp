@@ -1,0 +1,22 @@
+{
+  "name": "myappfood",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Georgy"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "bootstrap-material-design": "~0.3.0",
+    "normalize-css": "^4.1.1"
+  }
+}
